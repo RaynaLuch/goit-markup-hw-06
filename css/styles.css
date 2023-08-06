@@ -918,10 +918,11 @@ img {
     margin-top: 0;
     margin-bottom: 0;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
   }
 
   .team-card-item {
+    max-width: 264px;
     flex-basis: calc((100% - 24px) / 2);
     margin-bottom: 0;
   }
