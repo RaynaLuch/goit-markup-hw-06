@@ -908,7 +908,8 @@ img {
   .advantage-section {
     padding: 96px 0;
   }
-  .box-set {
+
+  .hidden-box {
     display: none;
   }
 
