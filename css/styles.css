@@ -940,6 +940,10 @@ img {
     margin: 0;
     padding-bottom: 0px;
   }
+  .footer-form-input {
+    min-width: 264px;
+  }
+
   .customers-card-set {
     gap: 24px;
   }
@@ -955,16 +959,18 @@ img {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
+    flex-direction: column;
   }
   .footer-logo-container {
     align-items: baseline;
-    margin-right: 120px;
+    margin-right: 24px;
   }
   .advantage-icon {
     display: none;
   }
   .footer-form-set {
     margin-left: 80px;
+    padding-top: 72px;
   }
   .footer-form {
     display: flex;
@@ -972,6 +978,9 @@ img {
   }
   .footer-text {
     text-align: left;
+  }
+  .footer-flex {
+    display: flex;
   }
 }
 
@@ -1099,6 +1108,7 @@ img {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
+    flex-direction: row;
   }
   .footer-logo-container {
     align-items: baseline;
