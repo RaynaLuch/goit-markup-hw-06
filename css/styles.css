@@ -1043,6 +1043,9 @@ img {
   .advantage-section {
     padding: 120px 0;
   }
+  .hidden-box {
+    display: contents;
+  }
   .box-set {
     display: flex;
     flex-wrap: wrap;
