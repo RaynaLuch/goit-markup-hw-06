@@ -939,6 +939,7 @@ img {
   .footer-paragraph {
     margin: 0;
     padding-bottom: 0px;
+    max-width: 264px;
   }
   .footer-form-input {
     min-width: 264px;
