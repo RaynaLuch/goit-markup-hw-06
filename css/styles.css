@@ -775,11 +775,9 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background-color: var(--color-accent); */
-    border: 1px solid rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    color: red;
-  }
+      }
 
   .mobile-menu {
     padding: 0;
@@ -845,6 +843,9 @@ img {
 }
 @media (min-width: 429px) {
   .menu-toggle {
+    display: none;
+  }
+  .menu-container{
     display: none;
   }
   .container {
@@ -974,6 +975,9 @@ img {
 
 @media (min-width: 769px) {
   .menu-toggle {
+    display: none;
+  }
+  menu-container{
     display: none;
   }
   .container {
