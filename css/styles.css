@@ -727,15 +727,6 @@ img {
     display: none;
   }
   .menu-toggle {
-    /*min-height: 40px;
-  min-width: 40px;
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;*/
-
     margin: 0;
     padding: 0;
     background-color: transparent;
@@ -1127,5 +1118,32 @@ img {
   }
   .footer-text {
     text-align: left;
+  }
+}
+@media (min-resolution: 192dpi) and (max-width: 428px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office1-2x.jpg);
+  }
+}
+@media (min-resolution: 192dpi) and (min-width: 429px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-2x.jpg);
+  }
+}
+@media (min-resolution: 192dpi) and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-2x.jpg);
   }
 }
