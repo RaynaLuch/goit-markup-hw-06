@@ -182,8 +182,7 @@ img {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  padding-top: 72px;
-  padding-bottom: 8px;
+  margin: 8px 0;
 }
 
 .advantage-box-text {
@@ -195,15 +194,17 @@ img {
 }
 
 .advantage-section {
-  padding: 48px 0 96px 0;
+  padding: 96px 0 96px 0;
+}
+.advantage-card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px 24px;
 }
 
-.box-section {
-  padding-bottom: 120px;
-}
 .team {
   background-color: var(--color-light);
-  padding: 120px 0 48px 0;
+  padding: 96px 0;
 }
 
 .team-card-title {
@@ -232,7 +233,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .team-card-subtitle {
@@ -264,6 +265,10 @@ img {
   background-color: var(--color-dark);
   padding: 97.5px 0 96px 0;
 }
+
+.footer-logo-container {
+  margin-bottom: 72px;
+}
 .footer-paragraph {
   color: var(--color-light);
   font-size: 16px;
@@ -272,7 +277,6 @@ img {
   letter-spacing: 0.02em;
   max-width: 268px;
   margin: 0 auto;
-  padding-bottom: 72px;
 }
 
 .portfolio-title {
@@ -353,12 +357,14 @@ img {
 .customers-card-set {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
 }
 
 .customers-item {
   flex-basis: calc((100% - 16px) / 2);
   height: 88px;
+  max-width: 190px;
 }
 .customers-item:hover,
 .customers-item:focus {
@@ -366,7 +372,7 @@ img {
 }
 
 .customers-section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .customers-box {
   fill: currentColor;
@@ -522,7 +528,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
+  width: 392px;
   min-height: 584px;
   background: var(--color-modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -742,9 +748,7 @@ img {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding-left: 40px;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding: 60px 35px 40px 40px;
     background-color: var(--color-white-background);
     z-index: 999;
 
@@ -795,7 +799,8 @@ img {
   .mobile-menu-social-set {
     display: flex;
     flex-wrap: wrap;
-    gap: 56px;
+    justify-content: space-between;
+    /* gap: 56px; */
   }
   .mobile-menu-email {
     font-family: Roboto;
@@ -841,8 +846,8 @@ img {
   }
   .container {
     max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .nav-style {
     display: flex;
@@ -869,7 +874,7 @@ img {
     justify-content: space-between;
   }
   .hero {
-    padding: 188px 0;
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -883,14 +888,7 @@ img {
   }
 
   .advantage-box-title {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-  }
-  .advantage-card-set {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+    text-align: left;
   }
 
   .advantage-item {
@@ -906,7 +904,7 @@ img {
 
   .team-card-set {
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 64px 24px;
     margin-top: 0;
     margin-bottom: 0;
     flex-direction: row;
@@ -925,7 +923,7 @@ img {
     text-align: left;
   }
   .footer-style {
-    padding: 100px 0;
+    padding: 97.5px 0 96px 108px;
   }
   .footer-paragraph {
     margin: 0;
@@ -937,11 +935,13 @@ img {
   }
 
   .customers-card-set {
+    justify-content: center;
     gap: 24px;
   }
 
   .customers-item {
     flex-basis: calc((100% - 48px) / 3);
+    max-width: 168px;
   }
   .footer-social-set {
     margin-bottom: 0;
@@ -956,13 +956,13 @@ img {
   .footer-logo-container {
     align-items: baseline;
     margin-right: 24px;
+    margin-bottom: 72px;
   }
   .advantage-icon {
     display: none;
   }
   .footer-form-set {
-    margin-left: 80px;
-    padding-top: 72px;
+    /* padding-top: 72px; */
   }
   .footer-form {
     display: flex;
@@ -974,8 +974,10 @@ img {
   .footer-flex {
     display: flex;
   }
+  .modal {
+    width: 408px;
+  }
 }
-
 @media (min-width: 769px) {
   .menu-toggle {
     display: none;
@@ -1023,7 +1025,6 @@ img {
   }
   .hero-title {
     font-size: 56px;
-
     line-height: 1.07;
   }
 
@@ -1031,11 +1032,6 @@ img {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-  }
-  .advantage-card-set {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
   }
 
   .advantage-item {
@@ -1045,7 +1041,11 @@ img {
     padding: 120px 0;
   }
   .hidden-box {
-    display: contents;
+    display: block;
+  }
+
+  .box-section {
+    padding-bottom: 120px;
   }
   .box-set {
     display: flex;
@@ -1058,21 +1058,25 @@ img {
   .box-item {
     flex-basis: calc((100% - 48px) / 3);
   }
-
+  .team {
+    padding: 120px 0;
+  }
   .team-card-set {
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 64px 24px;
     margin-top: 0;
     margin-bottom: 0;
     flex-direction: row;
-    align-items: left;
+    align-items: center;
   }
 
   .team-card-item {
     flex-basis: calc((100% - 72px) / 4);
     margin-bottom: 0;
   }
-
+  .customers-section {
+    padding: 120px 0;
+  }
   .logo-footer {
     display: inline-block;
     margin: 0 0 16px;
@@ -1086,6 +1090,7 @@ img {
     padding-bottom: 0px;
   }
   .customers-card-set {
+    justify-content: center;
     gap: 24px;
   }
 
@@ -1105,6 +1110,7 @@ img {
   .footer-logo-container {
     align-items: baseline;
     margin-right: 120px;
+    margin-bottom: 0;
   }
   .advantage-icon {
     display: flex;
