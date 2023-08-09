@@ -182,7 +182,7 @@ img {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  margin: 8px 0;
+  margin-bottom: 8px;
 }
 
 .advantage-box-text {
@@ -323,7 +323,7 @@ img {
 }
 
 .portfolio-item {
-  flex-basis: calc((100% - 48px) / 3);
+  flex-basis: 100%;
 }
 
 .portfolio-subtitle {
@@ -337,9 +337,10 @@ img {
 
 .portfolio-button-group {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px 24px;
+  margin-bottom: 48px;
 }
 .visually-hidden {
   position: absolute;
@@ -399,11 +400,13 @@ img {
   justify-content: center;
 }
 
+.footer-social-set-style {
+  margin-bottom: 72px;
+}
 .footer-social-set {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  margin-bottom: 72px;
   justify-content: center;
 }
 
@@ -831,7 +834,7 @@ img {
     justify-content: space-between;
     padding-top: 24px;
     padding-bottom: 24px;
-    padding-right: 16px;
+    /* padding-right: 16px; */
   }
   .menu-svg {
     stroke: var(--color-dark);
@@ -943,8 +946,10 @@ img {
     flex-basis: calc((100% - 48px) / 3);
     max-width: 168px;
   }
-  .footer-social-set {
+  .footer-social-set-style {
     margin-bottom: 0;
+  }
+  .footer-social-set {
     justify-content: left;
   }
   .footer-container {
@@ -976,6 +981,23 @@ img {
   }
   .modal {
     width: 408px;
+  }
+  .portfolio-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+  .portfolio-card-set {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .portfolio-item {
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 @media (min-width: 769px) {
@@ -1032,6 +1054,7 @@ img {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+    margin: 8px 0;
   }
 
   .advantage-item {
@@ -1097,8 +1120,11 @@ img {
   .customers-item {
     flex-basis: calc((100% - 120px) / 6);
   }
-  .footer-social-set {
+
+  .footer-social-set-style {
     margin-bottom: 0;
+  }
+  .footer-social-set {
     justify-content: left;
   }
   .footer-container {
@@ -1124,6 +1150,23 @@ img {
   }
   .footer-text {
     text-align: left;
+  }
+  .portfolio-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+  .portfolio-card-set {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
+  .portfolio-item {
+    flex-basis: calc((100% - 48px) / 3);
   }
 }
 @media (min-resolution: 192dpi) and (max-width: 428px) {
